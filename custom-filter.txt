@@ -1,0 +1,71 @@
+! =======================
+! AdGuard DNS Custom Rules - Hardcore Clean Internet Edition
+! Blocks NSFW content, ads on the web, and YouTube ads — while keeping YouTube functional
+! =======================
+
+! --- Section 1: Block Porn, NSFW Content, and Related Terms ---
+||*.pornhub.com^
+||*.xvideos.com^
+||*.xnxx.com^
+||*.onlyfans.com^
+||*.redtube.com^
+||*.rule34.xxx^
+||*.erome.com^
+||*.chaturbate.com^
+||*.cam4.com^
+||*.fapello.com^
+||*.booru.org^
+||*.nhentai.net^
+||*.hqporner.com^
+||*.spankbang.com^
+||*.adultfriendfinder.com^
+||*.bangbros.com^
+||*.hentai-foundry.com^
+||*.lustery.com^
+||*.javlibrary.com^
+
+! Optional: Block common adult-related keywords in domain names
+||*sex*^
+||*porn*^
+||*xxx*^
+||*hentai*^
+||*camgirl*^
+||*nude*^
+||*naked*^
+||*boobs*^
+||*fap*^
+
+! --- Section 2: Block YouTube Ads (Let YouTube Work, Kill the Ads) ---
+||youtube.com/pagead/*
+||youtube.com/api/stats/ads?*
+||youtube.com/ptracking?*
+||googleads.g.doubleclick.net^
+||ad.doubleclick.net^
+||yt3.ggpht.com^$domain=youtube.com
+
+! --- Section 3: Block Web Ads and Trackers (Full Send) ---
+||*.doubleclick.net^
+||*.googlesyndication.com^
+||*.adnxs.com^
+||*.adform.net^
+||*.adsafeprotected.com^
+||*.taboola.com^
+||*.outbrain.com^
+||*.revcontent.com^
+||*.zedo.com^
+||*.moatads.com^
+||*.scorecardresearch.com^
+||*.criteo.com^
+||*.serving-sys.com^
+||*.rubiconproject.com^
+||*.tracking-protection.com^
+||*.yieldmo.com^
+||*.advertising.com^
+
+! --- Section 4: Block TikTok and Its Services ---
+||*.tiktok.com^
+||*.tiktokcdn.com^
+||*.musical.ly^
+||*.byteoversea.com^
+||*.snssdk.com^
+||*.ibytedtos.com^
